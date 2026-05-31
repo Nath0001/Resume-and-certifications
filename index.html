@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nathaniel John — Technical Operations Specialist & Full-Stack Developer based in Lagos, Nigeria. Expert in web applications, cloud infrastructure, and robotics.">
+  <meta name="keywords" content="Nathaniel John, Full Stack Developer, Software Engineer, Lagos Nigeria, Portfolio, Web Developer">
+  <meta name="author" content="Nathaniel John">
+
+  <title>Nathaniel John | Technical Operations Specialist & Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Effects -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="bg-grid"></div>
+  <div class="bg-orbs">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <div class="dot"></div>
+        <span>NJ</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="mailto:nathanielpromax5050@gmail.com" class="nav-cta">Hire Me</a>
+      </div>
+
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero section" id="hero">
+    <img src="assets/hero-bg.png" alt="" class="hero-bg-image" aria-hidden="true">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Nathaniel</span> John
+        </h1>
+
+        <p class="hero-title">
+          <span class="typed-text" id="typedText"></span>
+        </p>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number" id="statYears">3+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" id="statProjects">10+</div>
+            <div class="hero-stat-label">Projects Built</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" id="statTech">15+</div>
+            <div class="hero-stat-label">Technologies</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/></svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-ring"></div>
+          <div class="hero-avatar-ring-2"></div>
+          <img src="assets/profile-avatar.png" alt="Nathaniel John" class="hero-avatar">
+
+          <div class="hero-floating-badge hero-floating-badge--top">
+            <span class="badge-icon">🚀</span>
+            Full-Stack Dev
+          </div>
+          <div class="hero-floating-badge hero-floating-badge--bottom">
+            <span class="badge-icon">🤖</span>
+            Robotics & IoT
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <span class="section-label reveal">Who I Am</span>
+      <h2 class="section-title reveal reveal-delay-1">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal reveal-delay-2">
+          <p>
+            I'm a <strong>Technical Operations Specialist & Software Developer</strong> with a degree in
+            Computer and Robotics Education from the <strong>University of Nigeria</strong>. With over 3 years
+            of experience, I specialize in Full-Stack Development, technical market analysis, and digital asset management.
+          </p>
+          <p>
+            I'm passionate about building responsive web applications, troubleshooting complex hardware/software
+            interfaces, and managing cloud-based infrastructure to drive data-driven results. My unique blend of
+            software engineering and robotics education enables me to bridge the gap between theory and real-world
+            application.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <span class="about-info-label">Name</span>
+              <span class="about-info-value">Nathaniel John</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Location</span>
+              <span class="about-info-value">Lagos, Nigeria</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Email</span>
+              <span class="about-info-value">Professornath@gmail.com</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Experience</span>
+              <span class="about-info-value">3+ Years</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-highlights reveal reveal-delay-3">
+          <div class="highlight-card">
+            <div class="highlight-icon">💻</div>
+            <div class="highlight-content">
+              <h4>Full-Stack Engineering</h4>
+              <p>Building end-to-end web solutions with modern front-end and back-end architectures</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">☁️</div>
+            <div class="highlight-content">
+              <h4>Cloud Infrastructure</h4>
+              <p>Managing data and deploying applications across AWS, Google Cloud, and VPS environments</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🤖</div>
+            <div class="highlight-content">
+              <h4>Robotics & IoT</h4>
+              <p>Integrating automated sensors, PLC and Arduino controllers for real-world systems</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">📊</div>
+            <div class="highlight-content">
+              <h4>Data & FinTech</h4>
+              <p>Utilizing live data feeds and quantitative analysis for risk management solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <span class="section-label reveal">What I Do</span>
+      <h2 class="section-title reveal reveal-delay-1">Technical Skills</h2>
+      <p class="section-subtitle reveal reveal-delay-2">A comprehensive toolkit spanning software development, cloud infrastructure, and data-driven technologies.</p>
+
+      <div class="skills-grid">
+        <!-- Software Development -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-icon">⚡</div>
+          <h3 class="skill-category-title">Software Development & Engineering</h3>
+
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>Full-Stack Development</h5>
+              <p>Proficient in building front-end and back-end architectures for web applications</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>Version Control & Deployment</h5>
+              <p>Git-based workflows, CI/CD pipelines, and package management</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>Technical Troubleshooting</h5>
+              <p>Diagnosing and fixing faults within complex hardware/software interfaces</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & Infrastructure -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-icon">☁️</div>
+          <h3 class="skill-category-title">Cloud & Infrastructure</h3>
+
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>Cloud Administration</h5>
+              <p>AWS S3, Google Drive, and Dropbox Business data management</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>Virtual Private Servers</h5>
+              <p>Deploying 24/7 remote terminals for bots and application hosting</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>SaaS Management</h5>
+              <p>Slack, Microsoft 365, Trello, and enterprise tool administration</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data & FinTech -->
+        <div class="skill-category reveal reveal-delay-4">
+          <div class="skill-category-icon">📊</div>
+          <h3 class="skill-category-title">Data, FinTech & Maintenance</h3>
+
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>Quantitative Analysis</h5>
+              <p>Live data feeds, charts, and risk management strategies</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>Technical Operations</h5>
+              <p>Preventive maintenance, firmware config for PLC & Arduino</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item-dot"></span>
+            <div class="skill-item-content">
+              <h5>AI-Assisted Development</h5>
+              <p>Utilizing AI tools for code generation and project architecture</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <span class="section-label reveal">My Work</span>
+      <h2 class="section-title reveal reveal-delay-1">Featured Projects</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Real-world applications showcasing full-stack development, cloud integration, and IoT solutions.</p>
+
+      <div class="projects-grid">
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-icon">🎓</div>
+          <h3 class="project-title">Cloud-Based Student Portal</h3>
+          <p class="project-description">
+            Engineered a lightweight data management system for real-time academic record tracking. 
+            Built with modern web technologies, the portal enables seamless student data management 
+            with real-time updates and cloud synchronization.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Full-Stack</span>
+            <span class="project-tag">Cloud</span>
+            <span class="project-tag">Real-Time</span>
+            <span class="project-tag">Data Management</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-icon">🤖</div>
+          <h3 class="project-title">Robotics Integration Framework</h3>
+          <p class="project-description">
+            Developed a research-based framework utilizing automated sensors to optimize vocational 
+            productivity and system efficiency. Implements IoT protocols for real-time monitoring 
+            and control of industrial processes.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">IoT</span>
+            <span class="project-tag">Arduino</span>
+            <span class="project-tag">Sensors</span>
+            <span class="project-tag">Automation</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-4">
+          <div class="project-icon">🧠</div>
+          <h3 class="project-title">AI-Assisted Prototyping System</h3>
+          <p class="project-description">
+            Leveraging AI tools to generate functional source code, troubleshoot complex logic, 
+            and manage project file architectures. Streamlines the development lifecycle from 
+            concept to deployment using intelligent automation.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">AI/ML</span>
+            <span class="project-tag">Prototyping</span>
+            <span class="project-tag">Automation</span>
+            <span class="project-tag">DevOps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <span class="section-label reveal">My Education</span>
+      <h2 class="section-title reveal reveal-delay-1">Academic Background</h2>
+
+      <div class="education-card reveal reveal-delay-2">
+        <div class="education-emblem">🏛️</div>
+        <div class="education-content">
+          <h3>B.Sc. (Ed.) Computer and Robotics Education</h3>
+          <p class="edu-school">University of Nigeria — Degree Requirements Completed (Certificate in View)</p>
+          <p class="edu-focus">
+            Comprehensive study focused on Robotics Systems, Computer Architecture, and Educational Technology. 
+            The program combined engineering principles with pedagogical methodologies.
+          </p>
+          <div class="edu-tags">
+            <span class="edu-tag">Robotics Systems</span>
+            <span class="edu-tag">Computer Architecture</span>
+            <span class="edu-tag">Educational Technology</span>
+            <span class="edu-tag">STEM Education</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <span class="section-label reveal">Credentials</span>
+      <h2 class="section-title reveal reveal-delay-1">Certificates & Credentials</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Professional certifications validating technical expertise and continuous learning.</p>
+
+      <div class="certificates-grid">
+        <div class="certificate-card reveal reveal-delay-2">
+          <div class="certificate-icon">🏅</div>
+          <div class="certificate-content">
+            <h4>Professional Certificate #1</h4>
+            <p>Verified technical credential</p>
+            <a href="https://drive.google.com/file/d/15EaZSf65qxeRPCYomeTYZMOYZ7HeRaRh/view" 
+               target="_blank" rel="noopener noreferrer" class="certificate-link">
+              Verify Certificate →
+            </a>
+          </div>
+        </div>
+
+        <div class="certificate-card reveal reveal-delay-3">
+          <div class="certificate-icon">🏅</div>
+          <div class="certificate-content">
+            <h4>Professional Certificate #2</h4>
+            <p>Verified technical credential</p>
+            <a href="https://drive.google.com/file/d/1xC2SULCYaJgcZaJ4Zr9u-STlfLvb7yc2/view?usp=sharing" 
+               target="_blank" rel="noopener noreferrer" class="certificate-link">
+              Verify Certificate →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soft Skills Section -->
+  <section class="section" id="soft-skills">
+    <div class="container">
+      <span class="section-label reveal">Beyond Code</span>
+      <h2 class="section-title reveal reveal-delay-1">Soft Skills</h2>
+
+      <div class="soft-skills-grid">
+        <div class="soft-skill-card reveal reveal-delay-2">
+          <div class="soft-skill-icon">📝</div>
+          <h4>Technical Documentation</h4>
+          <p>Writing comprehensive "How-to" guides and system manuals for end-users with clarity and precision.</p>
+        </div>
+
+        <div class="soft-skill-card reveal reveal-delay-3">
+          <div class="soft-skill-icon">👥</div>
+          <h4>User Training</h4>
+          <p>Simplifying complex technical concepts for non-technical stakeholders through effective communication.</p>
+        </div>
+
+        <div class="soft-skill-card reveal reveal-delay-4">
+          <div class="soft-skill-icon">📐</div>
+          <h4>Curriculum Design</h4>
+          <p>Designing instructional materials for STEM and technical training centers with educational best practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <span class="section-label reveal">Get In Touch</span>
+      <h2 class="section-title reveal reveal-delay-1">Let's Work Together</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Have a project in mind or need technical expertise? I'd love to hear from you.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal reveal-delay-2">
+          <p class="contact-text">
+            I'm currently open to new opportunities and collaborations. Whether you need a 
+            full-stack developer, cloud architect, or technical consultant — let's connect and 
+            build something amazing together.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div class="contact-item-content">
+              <h5>Email</h5>
+              <p>Professornath0001@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📱</div>
+            <div class="contact-item-content">
+              <h5>Phone</h5>
+              <p>+234 905 990 7916</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-content">
+              <h5>Location</h5>
+              <p>Lagos, Nigeria</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">🔗</div>
+            <div class="contact-item-content">
+              <h5>LinkedIn</h5>
+              <p><a href="https://www.linkedin.com/in/nathaniel-john-44b303341" target="_blank" rel="noopener noreferrer">linkedin.com/in/nathaniel-john-44b303341</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">🐙</div>
+            <div class="contact-item-content">
+              <h5>GitHub</h5>
+              <p><a href="https://github.com/Nath0001" target="_blank" rel="noopener noreferrer">github.com/Nath0001</a></p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-3" id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" class="form-input" placeholder="Project Collaboration">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Message</label>
+            <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <p class="footer-copyright">
+          © 2026 <span class="gradient-text">Nathaniel John</span>. All rights reserved.
+        </p>
+
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/nathaniel-john-44b303341" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/Nath0001" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:nathanielpromax5050@gmail.com" class="social-link" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
